@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			input{width: 30px;}
+		</style>
+	</head>
+	<body>
+		身高<input id="shengao" />
+		体重<input id="tizhong" />
+		<button id="btn">看看健康状况</button>
+	</body>
+	<script>
+		var btn = document.getElementById("btn");
+		btn.onclick = function(){
+			var num1 = document.getElementById("shengao");
+			var num2 = document.getElementById("tizhong");
+			var x = num1.value;
+			var y = num2.value;
+			Number(x);
+			Number(y);
+			var z = y/(x*x);
+			if(z<18.5){
+				alert("BMI:"+z+"--过轻");
+			}else if(z>=18.5 && z<28){
+				alert("BMI:"+z+"--正常");
+			}else if(z>=28 && z<32){
+				alert("BMI:"+z+"--肥胖");
+			}else{
+				alert("BMI:"+z+"--灰常肥胖");
+			}
+		}
+		
+	</script>
+</html>

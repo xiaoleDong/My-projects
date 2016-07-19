@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<!--<input id="text" />
+		<button id="btn">点击查看状态</button>-->
+	</body>
+	<script>
+//		var num1 = 3;
+//		var num2 = num1/2;
+//		alert(num2+" "+num1)
+		//复制运算时，等号右边如果是++或者--先复制，再执行++ --操作    如果是+ - * /   则先运算  再赋值
+//		var num1 = Math.round(Math.random()*100);
+//		if(num1%2 == 0 && num1 > 20){
+//			alert(num1+"是偶数且大于20")
+//		}else{
+//			alert(num1+"不是偶数或者小于20")
+//		}
+
+//		if(num1%3){
+//			alert(num1+"不能被3整除")
+//		}else{
+//			alert(num1+"能被3整除")
+//		}
+//	var btn = document.getElementById("btn");
+//	btn.onclick = function(){
+//		var input = document.getElementById("text");
+//		var num = input.value;
+//		var nNum = Number(num);
+//		if(nNum){
+//			if(nNum>20 || num =="0"){
+//				alert(nNum*2-1)
+//			}else{
+//				alert("请输入一个大于20的数字")
+//			}	
+//		}else{
+//			alert("请输入一个数字")
+//		}
+//	}
+
+//var btn = document.getElementById("btn");
+//	btn.onclick = function(){
+//		var input = document.getElementById("text");
+//		var num = input.value;
+//      if(num>0 && num<100){
+//      	if(num<60){
+//      		alert("不及格，要加油哦");
+//      	}else if(num>=60 && num<=70){
+//      		alert("及格，要继续努力哦");
+//      	}else if(num>70 && num<=80){
+//      		alert("良好，要继续努力哦");
+//      	}else if(num>80){
+//      		alert("优秀，666666");
+//      	}
+//      }else{
+//      	alert("请输入一个正确的分数，逗比")
+//      }
+//   }
+//   var x = Math.round(Math.random()*20);
+//   if(x<2){
+//   	alert("x的值为："+x+";y的值为"+x);
+//   }else if(x>=2 && x<10){
+//   	alert("x的值为："+x+";y的值为"+(x*2-1));
+//   }else{
+//   	alert("x的值为："+x+";y的值为"+(x*5-17))
+//   }
+	var score = Math.round(Math.random()*100);
+	var x = parseInt(score/10);
+	switch(x){
+	    case 6:
+		alert(score+"及格，要加油哦");
+		break;
+		case 7:
+		alert(score+"良好，要继续努力哦");
+		break;
+		case 8:
+		alert(score+"优秀，666666");
+		break;
+		case 9:
+		alert(score+"非常优秀，666666");
+		break;
+		case 10:
+		alert(score+"满分，666666");
+		break;
+		default:
+		alert(score+"哎，不及格");
+		break;}
+		
+	</script>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			input{width: 30px;}
+		</style>
+	</head>
+	<body>
+		<input id="year" />年
+		<input id="month" />月
+		<input id="day" />日
+		<button id="btn">是第几天呢？</button>
+	</body>
+	<script>
+		var btn = document.getElementById("btn");
+		btn.onclick = function(){
+				var year = document.getElementById("year");
+				var x = year.value;
+				x = Number(x);
+				var month = document.getElementById("month");
+				var y = month.value;
+				y = Number(y);
+				var day = document.getElementById("day");
+				var z = day.value;
+				z = Number(z);
+			if((x%4==0 && x%100!==0)||x%400==0){
+				switch(y){
+					case 1:
+					alert("这一天是该年的第"+z+"天!");
+					break;
+					case 2:
+					alert("这一天是该年的第"+(z+31)+"天!");
+					break;
+					case "3":
+					alert("这一天是该年的第"+(z+31+29)+"天!");
+					break;
+					case 4:
+					alert("这一天是该年的第"+(z+31+29+30)+"天!");
+					break;
+					case 5:
+					alert("这一天是该年的第"+(z+31+29+30+31)+"天!");
+					break;
+					case 6:
+					alert("这一天是该年的第"+(z+31+29+31+30+31)+"天!");
+					break;
+					case 7:
+					alert("这一天是该年的第"+(z+31+29+31+30+31+30)+"天!");
+					break;
+					case 8:
+					alert("这一天是该年的第"+(z+31+29+31+30+31+30+31)+"天!");
+					break;
+					case 9:
+					alert("这一天是该年的第"+(z+31+29+31+30+31+30+31+31)+"天!");
+					break;
+					case 10:
+					alert("这一天是该年的第"+(z+31+29+31+30+31+30+31+31+30)+"天!");
+					break;
+					case 11:
+					alert("这一天是该年的第"+(z+31+29+31+30+31+30+31+31+30+31)+"天!");
+					break;
+					case 12:
+					alert("这一天是该年的第"+(z+31+29+31+30+31+30+31+31+30+31+30)+"天!");
+					break;
+					default:
+					alert("请输入正确的月份！");
+					break;
+					
+				}	
+			}else{
+				switch(y){
+					case 1:
+					alert("这一天是该年的第"+z+"天!");
+					break;
+					case 2:
+					alert("这一天是该年的第"+(z+31)+"天!");
+					break;
+					case "3":
+					alert("这一天是该年的第"+(z+31+28)+"天!");
+					break;
+					case 4:
+					alert("这一天是该年的第"+(z+31+28+31)+"天!");
+					break;
+					case 5:
+					alert("这一天是该年的第"+(z+31+28+31+30)+"天!");
+					break;
+					case 6:
+					alert("这一天是该年的第"+(z+31+28+31+30+31)+"天!");
+					break;
+					case 7:
+					alert("这一天是该年的第"+(z+31+28+31+30+31+30)+"天!");
+					break;
+					case 8:
+					alert("这一天是该年的第"+(z+31+28+31+30+31+30+31)+"天!");
+					break;
+					case 9:
+					alert("这一天是该年的第"+(z+31+28+31+30+31+30+31+31)+"天!");
+					break;
+					case 10:
+					alert("这一天是该年的第"+(z+31+28+31+30+31+30+31+31+30)+"天!");
+					break;
+					case 11:
+					alert("这一天是该年的第"+(z+31+28+31+30+31+30+31+31+30+31)+"天!");
+					break;
+					case 12:
+					alert("这一天是该年的第"+(z+31+28+31+30+31+30+31+31+30+31+30)+"天!");
+					break;
+					default:
+					alert("请输入正确的月份！");
+					break;
+			
+			}
+			
+		}
+	}
+	</script>
+</html>

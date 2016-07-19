@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			input{width: 30px;}
+		</style>
+	</head>
+	<body>
+		<input  id="year" />
+		<button id="btn">是闰年吗？</button>
+	</body>
+	<script>
+		var btn = document.getElementById("btn");
+		btn.onclick = function(){
+			var year = document.getElementById("year");
+			var x = year.value;
+			Number(x);
+			if((x%4==0 && x%100!==0)||x%400==0){
+				alert(x+"是闰年");
+			}else{
+				alert(x+"不是闰年");
+			}
+		}
+	</script>
+</html>

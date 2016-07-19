@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			input{width: 30px;}
+		</style>
+	</head>
+	<body>
+	     <input id="pre" />
+	     <select id="sel">
+	     	<option>+</option>
+	     	<option>-</option>
+	     	<option>*</option>
+	     	<option>/</option>
+	     </select>
+	     <input id="aft" />
+	     <button id="btn">=</button>
+	</body>
+	<script>
+		var btn = document.getElementById("btn");
+		btn.onclick = function(){
+			var pre = document.getElementById("pre");
+			var x = pre.value;
+			var aft = document.getElementById("aft");
+			var y = aft.value;
+			var sel = document.getElementById("sel");
+			var z = sel.value;
+			switch(z){
+				case "+":
+				x = Number(x);
+				y = Number(y);
+				alert(x+"+"+y+"="+(x+y));
+				break;
+				case "-":
+				alert(x+"-"+y+"="+(x-y));
+				break;
+				case "*":
+				alert(x+"*"+y+"="+(x*y));
+				break;
+				case "/":
+				alert(x+"/"+y+"="+(x/y));
+				break;
+				default:
+				alert("hello,world");
+				break;
+			}
+		}
+	</script>
+</html>
